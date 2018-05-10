@@ -36,11 +36,11 @@ const Header = styled.div`
   height: 65px;
   padding-top: 15px;
   width: 100%;
+`;
 
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-  }
+const Title = styled.div`
+  font-size: 24px;
+  font-weight: bold;
 `;
 
 const Question = styled.div`
@@ -120,9 +120,7 @@ class App extends Component {
       <AppWrapper>
         <ContentWrapper>
           <Header>
-            <div className='title'>
-              The Birthday Paradox
-            </div>
+            <Title>The Birthday Paradox</Title>
           </Header>
           <Question>
             How many people need to enter a room so that there is a greater than 50% chance that two of
